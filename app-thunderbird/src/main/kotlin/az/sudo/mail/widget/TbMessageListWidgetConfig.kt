@@ -1,7 +1,7 @@
-package net.thunderbird.android.widget
+package az.sudo.mail.widget
 
 import app.k9mail.feature.widget.message.list.MessageListWidgetConfig
-import net.thunderbird.android.widget.provider.MessageListWidgetProvider
+import az.sudo.mail.widget.provider.MessageListWidgetProvider
 
 class TbMessageListWidgetConfig : MessageListWidgetConfig {
     override val providerClass = MessageListWidgetProvider::class.java

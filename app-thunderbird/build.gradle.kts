@@ -11,16 +11,16 @@ if (testCoverageEnabled) {
 }
 
 android {
-    namespace = "net.thunderbird.android"
+    namespace = "az.sudo.mail"
 
     defaultConfig {
-        applicationId = "net.thunderbird.android"
-        testApplicationId = "net.thunderbird.android.tests"
+        applicationId = "az.sudo.mail"
+        testApplicationId = "az.sudo.mail.tests"
 
         versionCode = 4
         versionName = "13.0"
 
-        buildConfigField("String", "CLIENT_INFO_APP_NAME", "\"Thunderbird for Android\"")
+        buildConfigField("String", "CLIENT_INFO_APP_NAME", "\"SUDO Mail for Android\"")
     }
 
     androidResources {

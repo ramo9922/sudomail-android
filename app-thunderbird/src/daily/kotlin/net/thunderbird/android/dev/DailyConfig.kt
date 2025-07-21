@@ -1,4 +1,4 @@
-package net.thunderbird.android.dev
+package az.sudo.mail.dev
 
 import app.k9mail.autodiscovery.api.AutoDiscovery
 import com.fsck.k9.backend.BackendFactory

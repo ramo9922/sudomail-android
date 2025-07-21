@@ -104,11 +104,11 @@ class SettingsProvider : ContentProvider(), KoinComponent {
             // K-9 Mail (F-Droid)
             "com.fsck.k9" to "c430665e3662253b2078dcda350c2c6ce44d915a3d8a147b63ced619bb9e8576",
             // Thunderbird for Android (release)
-            "net.thunderbird.android" to "b6524779b3dbbc5ac17a5ac271ddb29dcfbf723578c238e03c3c217811356dd1",
+            "az.sudo.mail" to "b6524779b3dbbc5ac17a5ac271ddb29dcfbf723578c238e03c3c217811356dd1",
             // Thunderbird for Android (beta)
-            "net.thunderbird.android.beta" to "056bfafb450249502fd9226228704c2529e1b822da06760d47a85c9557741fbd",
+            "az.sudo.mail.beta" to "056bfafb450249502fd9226228704c2529e1b822da06760d47a85c9557741fbd",
             // Thunderbird for Android (daily)
-            "net.thunderbird.android.daily" to "c48d74a75c45cd362b0ff2c1e9756f541dee816163e3684a9fd59f6c3ae949b2",
+            "az.sudo.mail.daily" to "c48d74a75c45cd362b0ff2c1e9756f541dee816163e3684a9fd59f6c3ae949b2",
         )
 
         val callerPackage = callingPackage ?: return false

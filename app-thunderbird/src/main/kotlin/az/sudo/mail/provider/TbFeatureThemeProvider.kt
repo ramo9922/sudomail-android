@@ -1,4 +1,4 @@
-package net.thunderbird.android.provider
+package az.sudo.mail.provider
 
 import androidx.compose.runtime.Composable
 import app.k9mail.core.ui.compose.theme2.thunderbird.ThunderbirdTheme2

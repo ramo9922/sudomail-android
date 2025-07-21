@@ -1,4 +1,4 @@
-package net.thunderbird.android.dev
+package az.sudo.mail.dev
 
 import app.k9mail.autodiscovery.api.AutoDiscovery
 import app.k9mail.autodiscovery.demo.DemoAutoDiscovery

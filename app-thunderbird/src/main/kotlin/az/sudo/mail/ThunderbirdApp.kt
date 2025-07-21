@@ -1,4 +1,4 @@
-package net.thunderbird.android
+package az.sudo.mail
 
 import app.k9mail.feature.telemetry.api.TelemetryManager
 import com.fsck.k9.K9

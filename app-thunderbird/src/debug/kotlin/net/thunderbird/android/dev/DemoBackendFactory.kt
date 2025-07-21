@@ -1,4 +1,4 @@
-package net.thunderbird.android.dev
+package az.sudo.mail.dev
 
 import app.k9mail.backend.demo.DemoBackend
 import com.fsck.k9.backend.BackendFactory

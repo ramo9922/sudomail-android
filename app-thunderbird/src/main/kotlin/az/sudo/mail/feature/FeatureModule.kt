@@ -1,4 +1,4 @@
-package net.thunderbird.android.feature
+package az.sudo.mail.feature
 
 import app.k9mail.feature.funding.api.FundingSettings
 import app.k9mail.feature.funding.featureFundingModule

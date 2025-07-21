@@ -1,4 +1,4 @@
-package net.thunderbird.android.provider
+package az.sudo.mail.provider
 
 import com.fsck.k9.preferences.FilePrefixProvider
 import net.thunderbird.core.common.provider.AppNameProvider

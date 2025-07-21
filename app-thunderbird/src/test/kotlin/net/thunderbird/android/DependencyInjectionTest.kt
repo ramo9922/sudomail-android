@@ -1,4 +1,4 @@
-package net.thunderbird.android
+package az.sudo.mail
 
 import android.app.Application
 import android.app.NotificationManager

@@ -7,9 +7,9 @@
     <queries>
         <!-- Required to be able to access the SettingsProvider of another app -->
         <package android:name="com.fsck.k9"/>
-        <package android:name="net.thunderbird.android"/>
-        <package android:name="net.thunderbird.android.beta"/>
-        <package android:name="net.thunderbird.android.daily"/>
+        <package android:name="az.sudo.mail"/>
+        <package android:name="az.sudo.mail.beta"/>
+        <package android:name="az.sudo.mail.daily"/>
     </queries>
 
     <application>

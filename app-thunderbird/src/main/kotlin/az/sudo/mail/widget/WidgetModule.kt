@@ -1,4 +1,4 @@
-package net.thunderbird.android.widget
+package az.sudo.mail.widget
 
 import app.k9mail.feature.widget.message.list.MessageListWidgetConfig
 import app.k9mail.feature.widget.unread.UnreadWidgetConfig

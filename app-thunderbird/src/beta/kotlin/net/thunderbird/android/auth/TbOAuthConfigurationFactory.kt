@@ -1,6 +1,6 @@
-package net.thunderbird.android.auth
+package az.sudo.mail.auth
 
-import net.thunderbird.android.BuildConfig
+import az.sudo.mail.BuildConfig
 import net.thunderbird.core.common.oauth.OAuthConfiguration
 import net.thunderbird.core.common.oauth.OAuthConfigurationFactory
 
@@ -73,7 +73,7 @@ class TbOAuthConfigurationFactory : OAuthConfigurationFactory {
             ),
             authorizationEndpoint = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
             tokenEndpoint = "https://login.microsoftonline.com/common/oauth2/v2.0/token",
-            redirectUri = "msauth://net.thunderbird.android.beta/oXQR8QkspkdQCotvApfiBQiPQBU%3D",
+            redirectUri = "msauth://az.sudo.mail.beta/oXQR8QkspkdQCotvApfiBQiPQBU%3D",
         )
     }
 

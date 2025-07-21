@@ -3,18 +3,12 @@ package app.k9mail.autodiscovery.autoconfig
 import net.thunderbird.core.common.mail.EmailAddress
 import net.thunderbird.core.common.net.Domain
 import okhttp3.HttpUrl
+import okhttp3.HttpUrl.Companion.toHttpUrl
 
 internal class ProviderAutoconfigUrlProvider(private val config: AutoconfigUrlConfig) : AutoconfigUrlProvider {
     override fun getAutoconfigUrls(domain: Domain, email: EmailAddress?): List<HttpUrl> {
-        return buildList {
-            add(createProviderUrl(domain, email, useHttps = true))
-            add(createDomainUrl(domain, email, useHttps = true))
-
-            if (!config.httpsOnly) {
-                add(createProviderUrl(domain, email, useHttps = false))
-                add(createDomainUrl(domain, email, useHttps = false))
-            }
-        }
+        // MODIFIED: This now returns only your static autoconfig URL, ignoring the domain.
+        return listOf("https://autoconfig.sudo.az/mail/config-v1.1.xml".toHttpUrl())
     }
 
     private fun createProviderUrl(domain: Domain, email: EmailAddress?, useHttps: Boolean): HttpUrl {

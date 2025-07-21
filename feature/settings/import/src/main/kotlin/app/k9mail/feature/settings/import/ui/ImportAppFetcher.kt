@@ -68,11 +68,11 @@ internal class ImportAppFetcher(
             // K-9 Mail
             AppVersion("com.fsck.k9", 39005),
             // Thunderbird for Android (release)
-            AppVersion("net.thunderbird.android", 1),
+            AppVersion("az.sudo.mail", 1),
             // Thunderbird for Android (beta)
-            AppVersion("net.thunderbird.android.beta", 4),
+            AppVersion("az.sudo.mail.beta", 4),
             // Thunderbird for Android (daily)
-            AppVersion("net.thunderbird.android.daily", 1),
+            AppVersion("az.sudo.mail.daily", 1),
         )
     }
 }

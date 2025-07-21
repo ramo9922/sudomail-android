@@ -1,4 +1,4 @@
-package net.thunderbird.android.featureflag
+package az.sudo.mail.featureflag
 
 import net.thunderbird.core.featureflag.FeatureFlag
 import net.thunderbird.core.featureflag.FeatureFlagFactory

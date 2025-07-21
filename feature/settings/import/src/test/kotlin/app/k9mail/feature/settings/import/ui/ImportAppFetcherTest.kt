@@ -17,7 +17,7 @@ import org.robolectric.RobolectricTestRunner
 import org.robolectric.Shadows.shadowOf
 import org.robolectric.annotation.Config
 
-private const val MY_PACKAGE_NAME = "net.thunderbird.android"
+private const val MY_PACKAGE_NAME = "az.sudo.mail"
 
 @RunWith(RobolectricTestRunner::class)
 @Config(application = Application::class)
@@ -74,15 +74,15 @@ class ImportAppFetcherTest {
     @Test
     fun `getAppInfoList() with multiple other supported apps installed`() {
         installPackage("com.fsck.k9", "K-9 Mail", versionCode = 39005)
-        installPackage("net.thunderbird.android.beta", "Thunderbird Beta", versionCode = 4)
-        installPackage("net.thunderbird.android.daily", "Thunderbird Daily", versionCode = 1)
+        installPackage("az.sudo.mail.beta", "Thunderbird Beta", versionCode = 4)
+        installPackage("az.sudo.mail.daily", "Thunderbird Daily", versionCode = 1)
 
         val result = importAppFetcher.getAppInfoList()
 
         assertThat(result).containsExactlyInAnyOrder(
             AppInfo("com.fsck.k9", "K-9 Mail", isImportSupported = true),
-            AppInfo("net.thunderbird.android.beta", "Thunderbird Beta", isImportSupported = true),
-            AppInfo("net.thunderbird.android.daily", "Thunderbird Daily", isImportSupported = true),
+            AppInfo("az.sudo.mail.beta", "Thunderbird Beta", isImportSupported = true),
+            AppInfo("az.sudo.mail.daily", "Thunderbird Daily", isImportSupported = true),
         )
     }
 

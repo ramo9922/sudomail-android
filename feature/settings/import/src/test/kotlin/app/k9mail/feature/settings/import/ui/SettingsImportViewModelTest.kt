@@ -153,7 +153,7 @@ class SettingsImportViewModelTest {
         testScope.testScheduler.advanceUntilIdle()
 
         viewModel.onPickAppButtonClicked()
-        viewModel.onAppPicked("net.thunderbird.android")
+        viewModel.onAppPicked("az.sudo.mail")
 
         assertThat(uiModelLiveData.value!!.isLoadingProgressVisible).isTrue()
         assertThat(uiModelLiveData.value!!.isPickDocumentButtonVisible).isFalse()
@@ -162,7 +162,7 @@ class SettingsImportViewModelTest {
 
         val inputStream = "".byteInputStream()
         contentResolver.stub {
-            on { openInputStream("content://net.thunderbird.android.settings/".toUri()) } doReturn inputStream
+            on { openInputStream("content://az.sudo.mail.settings/".toUri()) } doReturn inputStream
         }
         settingsImporter.stub {
             on { getImportStreamContents(inputStream) } doReturn ImportContents(
@@ -202,11 +202,11 @@ class SettingsImportViewModelTest {
         testScope.testScheduler.advanceUntilIdle()
 
         viewModel.onPickAppButtonClicked()
-        viewModel.onAppPicked("net.thunderbird.android")
+        viewModel.onAppPicked("az.sudo.mail")
 
         val inputStream = "".byteInputStream()
         contentResolver.stub {
-            on { openInputStream("content://net.thunderbird.android.settings/".toUri()) } doReturn inputStream
+            on { openInputStream("content://az.sudo.mail.settings/".toUri()) } doReturn inputStream
         }
         settingsImporter.stub {
             on { getImportStreamContents(inputStream) } doThrow SettingsImportExportException()
@@ -234,11 +234,11 @@ class SettingsImportViewModelTest {
         testScope.testScheduler.advanceUntilIdle()
 
         viewModel.onPickAppButtonClicked()
-        viewModel.onAppPicked("net.thunderbird.android")
+        viewModel.onAppPicked("az.sudo.mail")
 
         val inputStream = "".byteInputStream()
         contentResolver.stub {
-            on { openInputStream("content://net.thunderbird.android.settings/".toUri()) } doReturn inputStream
+            on { openInputStream("content://az.sudo.mail.settings/".toUri()) } doReturn inputStream
         }
         val accountOne = AccountDescription(name = "Account 1", uuid = "uuid-1")
         val accountTwo = AccountDescription(name = "Account 2", uuid = "uuid-2")

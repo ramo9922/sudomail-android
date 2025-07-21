@@ -1,6 +1,6 @@
-package net.thunderbird.android.provider
+package az.sudo.mail.provider
 
-import net.thunderbird.android.R
+import az.sudo.mail.R
 import net.thunderbird.core.ui.theme.api.ThemeProvider
 
 internal class TbThemeProvider : ThemeProvider {
